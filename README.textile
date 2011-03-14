@@ -26,6 +26,11 @@ It's efficiency depends on the ocurrence of 'runs':
 => "IdS14iltvlqc3t1ifhh1o8wnmf"
 </pre>
 
+h2. How it's done
+
+It's pretty simple, but you can find more infos at
+http://blog.metaminded.com/2011/02/08/how-to-efficiently-store-lists-of-ids-in-ruby/
+
 h2. License
 
 Copyright (c) 2010-2011 Peter Horn, <a href="http://www.provideal.net" target="_blank">Provideal GmbH</a>
