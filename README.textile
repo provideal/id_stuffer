@@ -1,0 +1,38 @@
+h1. IdStuffer
+
+A way to efficiently store ids (i.e., possibly sequential numbers > 0), well suited for params-ecoding.
+
+Note that the ids will be sorted and uniqued.
+
+h2. Examples
+
+<pre>
+> require 'id_stuffer'
+=> true
+> l = IdStuffer.stuff [1,2,3,4,5,6,7,10,11,12,15,16,17]
+=> "IdS1ulxye8j3x"
+> IdStuffer.unstuff(l)
+=> [1, 2, 3, 4, 5, 6, 7, 10, 11, 12, 15, 16, 17]
+</pre>
+
+It's efficiency depends on the ocurrence of 'runs':
+
+<pre>
+> IdStuffer.stuff [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+=> "IdS1eh"
+> IdStuffer.stuff [1,2,3,4,5,6,7,10,11,12,15,16,17]
+=> "IdS1ulxye8j3x"
+> IdStuffer.stuff [1,4,7,10,13,16,19,22,25,26,29,31,35]
+=> "IdS14iltvlqc3t1ifhh1o8wnmf"
+</pre>
+
+h2. License
+
+Copyright (c) 2010-2011 Peter Horn, <a href="http://www.provideal.net" target="_blank">Provideal GmbH</a>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
