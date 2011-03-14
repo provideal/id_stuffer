@@ -28,8 +28,7 @@ It's efficiency depends on the ocurrence of 'runs':
 
 h2. How it's done
 
-It's pretty simple, but you can find more infos at
-http://blog.metaminded.com/2011/02/08/how-to-efficiently-store-lists-of-ids-in-ruby/
+It's pretty simple, but you can find more infos in <a href="http://blog.metaminded.com/2011/02/08/how-to-efficiently-store-lists-of-ids-in-ruby/" target="_blank">our blog</a>.
 
 h2. License
 
