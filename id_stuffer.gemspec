@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.summary     = "a reasonable way to compress sequences of ids for parameter encoding"
   s.email       = "info@provideal.net"
   s.homepage    = "http://github.com/provideal/id_stuffer"
-  s.description = "a way to efficiently store ids (i.e., possibly sequential numbers), well suited for params-ecoding"
+  s.description = "a way to efficiently store ids (i.e., possibly sequential numbers > 0), well suited for params-ecoding. Note that the ids will be sorted and uniqued"
   s.authors     = ['Peter Horn']
 
   s.files         = `git ls-files`.split("\n")
